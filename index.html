@@ -480,7 +480,7 @@
           </ul>
         </div>
         <!-- Submit Form -->
-        <form class="footer-form js-speaker-form">
+        <form name="submit-form" class="footer-form js-speaker-form">
           <div class="form-field">
             <label for="email" class="label">Підпишіться на розсилку</label>
             <input type="email" name="email" id="email" placeholder="E-mail" />
@@ -497,11 +497,53 @@
     <!--Modal window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
+        <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-btn-icon">
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
+
+        <!-- <form class="modal-form" name="modal-form" autocomplete="off">
+          <strong class="modal-form-title"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+          <lable class="modal-lable">
+            <span class="lable-title">Ім'я</span>
+            <input type="text" name="name" />
+            <svg class="input-icon">
+              <use></use>
+            </svg>
+          </lable>
+
+          <lable class="modal-lable">
+            <span class="lable-title">Телефон</span>
+            <input type="tel" name="tel" />
+            <svg class="input-icon">
+              <use></use>
+            </svg>
+          </lable>
+
+          <lable class="modal-lable">
+            <span class="lable-title">Пошта</span>
+            <input type="email" name="email" />
+            <svg class="input-icon">
+              <use></use>
+            </svg>
+          </lable>
+
+          <lable class="modal-lable">
+            <span class="lable-title">Коментар</span>
+            <textarea type="text" name="comment" />
+          </lable>
+
+          <lable>
+            <span
+              >Погоджуюся з розсилкою та приймаю
+              <a class="form-policy" href="">Умови договору</a></span
+            >
+            <input type="checkbox" name="" id="" />
+          </lable>
+        </form> -->
       </div>
     </div>
 
