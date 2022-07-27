@@ -350,10 +350,19 @@
           </ul>
         </div>
         <!-- Submit Form -->
-        <form name="submit-form" class="footer-form js-speaker-form">
-          <div class="form-field">
-            <label for="email" class="label">Підпишіться на розсилку</label>
-            <input type="email" name="email" id="email" placeholder="E-mail" />
+        <form
+          class="footer-form js-speaker-form"
+          name="submit-form"
+          autocomplete="off"
+        >
+          <div class="submit-field">
+            <strong class="label">Підпишіться на розсилку</strong>
+            <input
+              class="submit-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
           </div>
           <button type="submit" class="footer-button">
             Підписатися
