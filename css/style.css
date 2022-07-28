@@ -725,6 +725,12 @@ img {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: transparent;
+
+  transition: border-color 250ms var(--timing-function);
+}
+.input-form:focus-within {
+  border-color: var(--accent-text-color);
 }
 .icon-form {
   position: absolute;
@@ -734,6 +740,8 @@ img {
 
   width: 18px;
   height: 18px;
+
+  transition: fill 250ms var(--timing-function);
 }
 
 .input-form:focus + .icon-form {
@@ -747,6 +755,7 @@ img {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: transparent;
   resize: none;
 }
 .textarea::placeholder {
@@ -754,6 +763,11 @@ img {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+
+  transition: border-color 250ms var(--timing-function);
+}
+.textarea:focus-within {
+  border-color: var(--accent-text-color);
 }
 .checkbox-label {
   position: relative;
@@ -782,13 +796,16 @@ img {
 
   width: 16px;
   height: 15px;
-  margin-right: 8px;
 
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
+
+  transition: background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
 }
 .checkbox-input:checked + .icon-checkbox {
   background-color: var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
 .checkbox-text {
   margin: 0 auto;
