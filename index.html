@@ -428,13 +428,13 @@
       <div class="container">
         <div>
           <a class="logo line" href="./index.html" lang="en"
-            >Web<span class="accent">Studio</span></a
-          >
-
+            >Web<span class="accent">Studio</span>
+          </a>
           <address class="address">
             <a class="link line accent" href=""
               >м. Київ, пр-т Лесі Українки, 26</a
-            ><br />
+            >
+            <br />
             <a class="link line" href="mailto:info@example.com"
               >info@example.com</a
             >
@@ -517,69 +517,79 @@
             >Залиште свої дані, ми вам передзвонимо</strong
           >
 
-          <label class="field">
-            <span class="lable-title">Ім'я</span>
-            <input
-              class="input-form"
-              name="name-feedback"
-              type="text"
-              placeholder=" "
-              autofocus
-            />
-            <svg class="icon-form">
-              <use href="./images/icons.svg#icon_person"></use>
-            </svg>
-          </label>
+          <div class="form-input-group" role="group">
+            <label class="field">
+              <span class="lable-title">Ім'я</span>
+              <input
+                class="input-form"
+                name="name-feedback"
+                type="text"
+                placeholder=" "
+                autofocus
+              />
+              <svg class="icon-form">
+                <use href="./images/icons.svg#icon_person"></use>
+              </svg>
+            </label>
 
-          <label class="field">
-            <span class="lable-title">Телефон</span>
-            <input
-              class="input-form"
-              name="tel-feedback"
-              type="tel"
-              placeholder=" "
-            />
-            <svg class="icon-form">
-              <use href="./images/icons.svg#icon_phone"></use>
-            </svg>
-          </label>
+            <label class="field">
+              <span class="lable-title">Телефон</span>
+              <input
+                class="input-form"
+                name="tel-feedback"
+                type="tel"
+                placeholder=" "
+              />
+              <svg class="icon-form">
+                <use href="./images/icons.svg#icon_phone"></use>
+              </svg>
+            </label>
 
-          <label class="field">
-            <span class="lable-title">Пошта</span>
-            <input
-              class="input-form"
-              name="email-feedback"
-              type="email"
-              placeholder=" "
-            />
-            <svg class="icon-form">
-              <use href="./images/icons.svg#icon_email_black"></use>
-            </svg>
-          </label>
+            <label class="field">
+              <span class="lable-title">Пошта</span>
+              <input
+                class="input-form"
+                name="email-feedback"
+                type="email"
+                placeholder=" "
+              />
+              <svg class="icon-form">
+                <use href="./images/icons.svg#icon_email_black"></use>
+              </svg>
+            </label>
 
-          <label class="textarea-form">
-            <span class="lable-title">Коментар</span>
-            <textarea
-              class="textarea"
-              name="comment-feedback"
-              placeholder="Введіть текст"
-            ></textarea>
-          </label>
+            <label class="textarea-form">
+              <span class="lable-title">Коментар</span>
+              <textarea
+                class="textarea"
+                name="comment-feedback"
+                placeholder="Введіть текст"
+              >
+              </textarea>
+            </label>
+          </div>
 
           <label class="checkbox-label">
             <input
-              class="checkbox-input"
+              class="checkbox-input visually-hidden"
               name="check-policy"
               type="checkbox"
               value="checked-policy"
             />
             <svg class="icon-checkbox">
-              <use href="./images/icons.svg#icon_check"></use>
+              <use
+                class="icon-check"
+                href="./images/icons.svg#icon_check"
+              ></use>
+              <use
+                class="icon-uncheck"
+                href="./images/icons.svg#icon_uncheck"
+              ></use>
             </svg>
             <span class="checkbox-text"
               >Погоджуюся з розсилкою та приймаю
-              <a class="form-policy" href="">Умови договору</a></span
-            >
+              <a class="form-policy" href="">Умови договору</a>
+            </span>
           </label>
 
           <button class="modal-submit-btn" type="submit">Відправити</button>
