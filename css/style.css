@@ -563,7 +563,7 @@ img {
 .footer-form {
   display: flex;
   align-items: flex-end;
-  margin-left: 93px;
+  margin-left: auto;
 }
 .submit-field {
   margin-right: 12px;
@@ -797,6 +797,9 @@ img {
 
   width: 16px;
   height: 15px;
+}
+.checkbox-input:focus + .icon-checkbox {
+  outline: 1px solid var(--title-text-color);
 }
 .checkbox-input:checked + .icon-checkbox .icon-uncheck {
   opacity: 0;
