@@ -140,7 +140,6 @@ img {
   gap: 50px;
   margin-left: 93px;
 }
-
 .site-nav__link {
   position: relative;
 
@@ -160,10 +159,10 @@ img {
 .site-nav__link:focus {
   color: var(--accent-text-color);
 }
-.current {
+.site-nav__link--current {
   color: var(--accent-text-color);
 }
-.site-nav__link.current::after {
+.site-nav__link--current::after {
   display: inline-block;
   content: '';
 
@@ -181,9 +180,10 @@ img {
 /* Contacts */
 .contacts {
   gap: 50px;
+}
+.contacts--left-gap {
   margin-left: auto;
 }
-
 .contacts__link {
   display: flex;
   justify-content: center;
@@ -231,7 +231,7 @@ img {
   background-color: var(--hero-background-color);
   text-align: center;
 }
-.hero .title {
+.hero__title {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
