@@ -309,7 +309,7 @@ img {
 .about {
   padding-top: 0;
 }
-.about .title {
+.about__title {
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -317,15 +317,15 @@ img {
   color: var(--title-text-color);
   text-align: center;
 }
-.about .items {
+.about-items {
   display: flex;
   gap: var(--card-set-gap);
 }
-.about .item {
+.about-items__item {
   position: relative;
 }
 
-.about-subtitle {
+.about-items__subtitle {
   position: absolute;
   bottom: 0;
   left: 0;
