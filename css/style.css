@@ -386,12 +386,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .social__item {
   display: flex;
-}
-.social__link:not(:last-child) {
-  margin-right: 10px;
 }
 .social__link {
   display: flex;
@@ -460,7 +458,7 @@ img {
 }
 
 /* Footer */
-.footer {
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -470,15 +468,19 @@ img {
   color: var(--hero-text-color);
   background-color: var(--footer-background-color);
 }
+.page-footer__container {
+  display: flex;
+  align-items: baseline;
+}
 
-.footer .logo {
+.page-footer__logo {
   display: inline-block;
   margin-bottom: 20px;
 }
 .address {
   font-style: normal;
 }
-.address .link {
+.address__link {
   display: inline-block;
 
   font-weight: 400;
@@ -488,30 +490,22 @@ img {
 
   transition: color 250ms var(--timing-function);
 }
-
-.address .link:hover,
-.address .link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--accent-text-color);
 }
-.address .link:not(:last-child) {
+.address__link:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer .accent {
+.page-footer--accent {
   color: var(--hero-text-color);
 }
 
 /* Connect Section */
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
 .connect {
   margin-left: 70px;
 }
-
-.connect-title {
+.connect__title {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -519,38 +513,9 @@ img {
 
   margin-bottom: 20px;
 }
-.connect-items {
-  display: flex;
-}
-.connect-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 44px;
-  height: 44px;
-
+.page-footer__social--color {
   color: var(--hero-text-color);
   background-color: rgba(255, 255, 255, 0.1);
-
-  border-radius: 50%;
-
-  transition: background-color 250ms var(--timing-function);
-}
-.icon-connect {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-.connect-link:hover,
-.connect-link:focus {
-  background-color: var(--accent-text-color);
-}
-.connect-item {
-  display: flex;
-}
-.connect-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 /* Submit Form */
@@ -559,10 +524,10 @@ img {
   align-items: flex-end;
   margin-left: auto;
 }
-.submit-field {
+.footer-form__field {
   margin-right: 12px;
 }
-.footer-form .label {
+.footer-form__label {
   display: inline-block;
   margin-bottom: 20px;
 
@@ -571,7 +536,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.footer-form .submit-input {
+.footer-form__input {
   display: flex;
   align-items: center;
   padding: 15px 16px;
@@ -608,7 +573,7 @@ img {
   border-radius: 4px;
   border: none;
 }
-.icon-submit {
+.footer-button__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -618,6 +583,7 @@ img {
   | Modal window
   |==============================
 */
+/* Backdrop start*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -633,7 +599,7 @@ img {
     visibility 250ms var(--timing-function);
 }
 /* is-hidden */
-.backdrop.is-hidden {
+.backdrop__is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -641,7 +607,7 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
 }
-
+/* Backdrop end*/
 .modal {
   position: absolute;
   left: 50%;
@@ -659,7 +625,6 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 400ms var(--timing-function);
 }
-
 .modal-btn {
   position: absolute;
   top: 8px;
@@ -683,7 +648,7 @@ img {
 
   transition: color 250ms var(--timing-function);
 }
-.modal-btn-icon {
+.modal-btn__icon {
   width: 18px;
   height: 18px;
 
