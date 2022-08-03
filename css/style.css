@@ -274,11 +274,11 @@ img {
 
 /* Section Benefits */
 
-.benefits-items {
+.benefits__items {
   display: flex;
   gap: var(--card-set-gap);
 }
-.benefits-items__thumb {
+.benefits__thumb {
   display: flex;
   width: 270px;
   height: 120px;
@@ -291,12 +291,12 @@ img {
   border-radius: 4px;
 }
 
-.benefits-items__icon {
+.benefits__icon {
   width: 70px;
   height: 70px;
 }
 
-.benefits-items__title {
+.benefits__title {
   margin-bottom: 10px;
 
   font-size: 14px;
